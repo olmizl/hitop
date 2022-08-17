@@ -1,0 +1,31 @@
+<%- include("./include/header"); %>
+
+<div class="subVisual" id="subVisual01">
+  <div class="titleBox">
+    <h2 class="subTitle">Company</h2>
+    <p>우리는, 도시경관사업의 최고기업이 되고 시장을 선도한다!</p>
+  </div>
+
+  <nav id="lnb">
+    <div class="container">
+      <a href="" class="home">HOME</a>
+      <div class="depth01 menu">
+        <button>company</button>
+        <%- include("./include/depth01"); %>
+      </div>
+      <div class="depth02 menu">
+        <button>사업개요</button>
+        <%- include("./include/lnb01"); %>
+      </div>
+    </div>
+  </nav>
+</div>
+
+<div class="subContents" id="organization">
+  <h3 class="contentsTitle">조직도</h3>
+  <div class="contents">
+    <img src="./images/contents/organization.jpg" alt="" />
+  </div>
+</div>
+
+<%- include("./include/footer"); %>
