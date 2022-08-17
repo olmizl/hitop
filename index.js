@@ -120,6 +120,6 @@ app.use((req, res, next) => {
 app.use((err, req, res, next) => {
   res.status(500).render("error", { msg: "알 수 없는 오류가 발생했습니다." });
 });
-app.listen(8099, () => {
-  console.log(`${PORT}에서 서버 대기중`);
+app.listen(port, () => {
+  console.log(`${port}에서 서버 대기중`);
 });
