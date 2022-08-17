@@ -12,6 +12,9 @@ const corsOption = {
   credentials: true,
 };
 
+app.set("port", process.env.PORT || 8099);
+const PORT = app.get("port");
+
 app.use(
   cors({
     origin: "http://127.0.0.1:5500",
@@ -118,5 +121,5 @@ app.use((err, req, res, next) => {
   res.status(500).render("error", { msg: "알 수 없는 오류가 발생했습니다." });
 });
 app.listen(8099, () => {
-  console.log(`8099에서 서버 대기중`);
+  console.log(`${PORT}에서 서버 대기중`);
 });
