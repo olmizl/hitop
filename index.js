@@ -15,12 +15,12 @@ const corsOption = {
 app.set("port", process.env.PORT || 8099);
 const PORT = app.get("port");
 
-app.use(
-  cors({
-    origin: "http://127.0.0.1:5500",
-    credentials: true,
-  })
-);
+// app.use(
+//   cors({
+//     origin: "http://127.0.0.1:5500",
+//     credentials: true,
+//   })
+// );
 
 app.use(express.static(path.join(__dirname, "./public"))); //정적파일 css,js,images등 서비스 해주는 경로 잡아주기
 app.use(express.json()); //json을 리턴하려면
