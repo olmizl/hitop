@@ -14,14 +14,53 @@
         <%- include("./include/depth01"); -%>
       </div>
       <div class="depth02 menu">
-        <button>인재상</button>
-        <%- include("./include/lnb01"); -%>
+        <button>채용공고</button>
+        <%- include("./include/lnb05"); -%>
       </div>
     </div>
   </nav>
 </div>
 <div class="subContents">
   <h3 class="contentsTitle">채용공고</h3>
+  <div id="recruit" class="container">
+    <div class="recruitTable">
+      <table>
+        <th>번호</th>
+        <th>제목</th>
+        <th>날짜</th>
+        <tr>
+          <td><span class="notice">공지</span></td>
+          <td>
+            <span><a href="/detail01">지사모집 공고</a> <img src="/images/contents/icon_file.gif" alt="" /> </span>
+          </td>
+          <td>2018.08.10</td>
+        </tr>
+        <tr>
+          <td><span class="notice">공지</span></td>
+          <td>
+            <span><a href="/detail02">상시채용 공고 </a><img src="/images/contents/icon_file.gif" alt="" /> </span>
+          </td>
+          <td>2018.08.10</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td><a href="/detail03">[연구개발직] 잡코리아 채용 공고 (2019년) - 마감</a></td>
+          <td>2019-08-23</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td><a href="/detail04">[관급영업 및 영업지원] 잡코리아 채용 공고 (2018년)</a></td>
+          <td>2018-08-20</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td><a href="/detail05">[연구개발직] 잡코리아 채용 공고 (2018년)</a></td>
+          <td>2018-07-31</td>
+        </tr>
+      </table>
+    </div>
+    <%- include("./include/pagination"); %> <%- include("./include/search"); %>
+  </div>
 </div>
 
 <%- include("./include/footer"); %>

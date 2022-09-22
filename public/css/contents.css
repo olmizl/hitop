@@ -555,8 +555,12 @@
 }
 .overlay .adderss {
   margin-top: 10px;
-  font-size: 20px;
+  font-size: 14px;
   font-weight: 700;
+}
+.overlay .info .tel {
+  font-size: 13px;
+  margin-bottom: 8px;
 }
 .overlay:before {
   display: block;

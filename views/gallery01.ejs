@@ -14,8 +14,8 @@
         <%- include("./include/depth01"); %>
       </div>
       <div class="depth02 menu">
-        <button>특허인증</button>
-        <%- include("./include/lnb01"); %>
+        <button>시공사진</button>
+        <%- include("./include/lnb03"); %>
       </div>
     </div>
   </nav>
@@ -23,5 +23,150 @@
 
 <div class="subContents">
   <h3 class="contentsTitle">시공사진</h3>
-  <div class="contents" id="introduce"></div>
+  <div class="contents" id="gallery01">
+    <div class="businessTab">
+      <ul>
+        <li><a href="/gallery01">경관용포장재</a></li>
+        <li>기능성포장재</li>
+        <li>조립식포장재</li>
+        <li>스포츠필드</li>
+      </ul>
+    </div>
+    <div id="inner04">
+      <div class="select">
+        <div class="container">
+          <h2>검색</h2>
+          <select name="sel1" id="sel1"></select>
+          <select name="sel2" id="sel2" style="display: none"></select>
+          <input type="text" placeholder="검색어를 입력하세요." />
+          <button>검색</button>
+        </div>
+      </div>
+      <div class="innerBottomContents04">
+        <div class="container">
+          <ul class="list04_01">
+            <li><img src="/images/contents/c01.jpg" alt="" /><span>습식 흙콘크리트</span></li>
+            <li><img src="/images/contents/c02.jpg" alt="" /><span>텍스크리트</span></li>
+            <li><img src="/images/contents/c03.jpg" alt="" /><span>텍스크리트</span></li>
+            <li><img src="/images/contents/c04.jpg" alt="" /><span>텍스크리트</span></li>
+            <li><img src="/images/contents/c05.jpg" alt="" /><span>습식 흙콘크리트</span></li>
+            <li><img src="/images/contents/c06.jpg" alt="" /><span>아트크리트</span></li>
+            <li><img src="/images/contents/c07.jpg" alt="" /><span>아트크리트(스템프)</span></li>
+            <li><img src="/images/contents/c08.jpg" alt="" /><span>습식 흙콘크리트</span></li>
+            <li><img src="/images/contents/c09.jpg" alt="" /><span>습식 흙콘크리트</span></li>
+            <li><img src="/images/contents/c10.jpg" alt="" /><span>텍스크리트 - 스탠드 </span></li>
+          </ul>
+          <ul class="list04_02">
+            <button><span class="material-icons"> arrow_back_ios </span></button>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+            <button><span class="material-icons"> arrow_forward_ios </span></button>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
+
+<%- include("./include/footer"); %>
+
+<script>
+  $(".businessTab ul li").on("mouseenter", function () {
+    $(this).addClass("businessTab").siblings().removeClass("businessTab");
+  });
+  $(function () {
+    $(".businessTab ul li:nth-child(1)").addClass("businessTab");
+  });
+  $(".businessTab ul li").on("mouseleave", function () {
+    $(".businessTab ul li:nth-child(1)").addClass("businessTab").siblings().removeClass("businessTab");
+  });
+
+  $(document).ready(function () {
+    var sel1 = {
+      " ": "1차 카테고리 선택",
+      art: "아트크리트",
+      tex: "텍스크리트",
+      pat: "패턴크리트",
+      gro: "흙콘크리트",
+      sil: "실코트",
+    };
+
+    //sel1이 art일경우
+    var sel2_1 = {
+      " ": "2차 카테고리 선택",
+      A01: "공원, 광장",
+      A02: "보, 차도용",
+      A03: "자전거도로",
+      A04: "주차장",
+      A05: "기타",
+    };
+
+    //sel1 tex일경우
+    var sel2_2 = {
+      " ": "2차 카테고리 선택",
+      T01: "보, 차도용",
+      T02: "공원, 광장",
+      T03: "주차장",
+      T04: "자전거도로",
+      T05: "육교",
+      T06: "스텐드",
+      T07: "벽체",
+    };
+
+    //sel1 pat일경우
+    var sel2_3 = {
+      " ": "2차 카테고리 선택",
+      P01: "보, 차도용",
+      P02: "공원, 광장",
+      P03: "주차장",
+    };
+
+    //sel1 gro일경우
+    var sel2_4 = {
+      " ": "2차 카테고리 선택",
+      G01: "습식 흙콘크리트",
+      G02: "건식 흙콘크리트",
+      G03: "투수형 흙콘크리트",
+    };
+
+    var sel2_5 = {
+      " ": "2차 카테고리 선택",
+    };
+
+    function retOption(mapArr, select) {
+      var html = "";
+      var keys = Object.keys(mapArr);
+      for (var i in keys) {
+        html += "<option value=" + "'" + keys[i] + "'>" + mapArr[keys[i]] + "</option>";
+      }
+
+      $("select[id='" + select + "']").html(html);
+    }
+
+    $("select[id='sel1']").on("change", function () {
+      var option = $("#sel1 option:selected").val();
+      var subSelName = "";
+      if (option == "art") {
+        subSelName = "sel2_1";
+      } else if (option == "tex") {
+        subSelName = "sel2_2";
+      } else if (option == "pat") {
+        subSelName = "sel2_3";
+      } else if (option == "gro") {
+        subSelName = "sel2_4";
+      } else if (option == "sil") {
+        subSelName = "sel2_5";
+      } else {
+        $("#sel2").show();
+        return;
+      }
+      $("#sel2").show();
+      retOption(eval(subSelName), "sel2");
+    });
+    retOption(sel1, "sel1");
+  });
+</script>

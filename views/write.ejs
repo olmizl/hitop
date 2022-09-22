@@ -1,0 +1,74 @@
+<%- include("./include/header"); %>
+
+<div class="subVisual" id="subVisual05">
+  <div class="titleBox">
+    <h2 class="subTitle">Recruit</h2>
+    <p>도전하는 젊은 열정과 창의적 감각을 겸비한 전문적인 프로정신!</p>
+  </div>
+
+  <nav id="lnb">
+    <div class="container">
+      <a href="" class="home">HOME</a>
+      <div class="depth01 menu">
+        <button>Recruit</button>
+        <%- include("./include/depth01"); -%>
+      </div>
+      <div class="depth02 menu">
+        <button>채용공고</button>
+        <%- include("./include/lnb05"); -%>
+      </div>
+    </div>
+  </nav>
+</div>
+<div class="subContents">
+  <h3 class="contentsTitle">견적문의</h3>
+
+  <div class="write container">
+    <!-- <form action="/add" method="POST" id="join" class="formBox" enctype="multipart/form-data"> -->
+    <form action="/add" method="POST">
+      <!-- 서버로 파일 전송할때 form태그안에 enctype="multipart/form-data" 필수 -->
+      <table>
+        <label>
+          <th>
+            <span>제목</span>
+          </th>
+          <th><input type="text" id="title" name="title" placeholder="제목을 입력하세요" /></th>
+        </label>
+
+        <tr>
+          <label>
+            <td>
+              <span>작성자</span>
+            </td>
+            <td><input type="text" id="writer" name="writer" placeholder="이름을 입력하세요" /></td>
+          </label>
+        </tr>
+        <tr>
+          <label>
+            <td>
+              <span>날짜</span>
+            </td>
+            <td><input type="text" id="date" name="date" placeholder="등록 날짜를 입력해주세요" /></td>
+          </label>
+        </tr>
+        <tr>
+          <label>
+            <td>
+              <span>문의 내용</span>
+            </td>
+            <td><input type="text" id="desc" name="desc" placeholder="문의내용을 입력해주세요" /></td>
+          </label>
+        </tr>
+      </table>
+
+      <div class="btns">
+        <button type="submit" id="btnJoin">등록</button>
+        <button type="reset">취소</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<%- include("./include/footer"); %>
+
+<script></script>

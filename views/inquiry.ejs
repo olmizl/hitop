@@ -11,7 +11,7 @@
   <div class="container">
     <a href="" class="home">HOME</a>
     <div class="depth01 menu">
-      <button>company</button>
+      <button>customer</button>
       <%- include("./include/depth01"); %>
     </div>
     <div class="depth02 menu">
@@ -24,15 +24,17 @@
 
 <div class="subContents">
   <h3 class="contentsTitle">견적문의</h3>
+
+  <!-- <% list.forEach(function(item,idx){ %>
+    <li><a href="/detail/<%= item.no %>"><%= item.title %></a></li>
+    <% }) %> -->
+
+
   <div class="contents" id="inquiry">
     <div class="container">
+
       <table class="boardTable">
-        <colgroup>
-          <col style="width: 5%" />
-          <col  />
-          <col style="width: 15%;" />
-          <col  style="width: 15%;"/>
-        </colgroup>
+
         <thead>
           <tr>
             <th scope="column">번호</th>
@@ -44,68 +46,30 @@
 
         <tbody>
           <tr>
-            <td>1</td>
-            <td class="subject">제목이 들어갑니다.</td>
+            <td></td>
+            <td class="subject">[필독] 견적문의 글 작성 전 읽어주세요</td>
             <td>관리자</td>
-            <td>2022.05.10</td>
-          </tr>
-          <tr>
-            <td>1</td>
-            <td class="subject">제목이 들어갑니다.</td>
-            <td>관리자</td>
-            <td>2022.05.10</td>
-          </tr>
-          <tr>
-            <td>1</td>
-            <td class="subject">제목이 들어갑니다.</td>
-            <td>관리자</td>
-            <td>2022.05.10</td>
-          </tr>
-          <tr>
-            <td>1</td>
-            <td class="subject">제목이 들어갑니다.</td>
-            <td>관리자</td>
-            <td>2022.05.10</td>
-          </tr>
-          <tr>
-            <td>1</td>
-            <td class="subject">제목이 들어갑니다.</td>
-            <td>관리자</td>
-            <td>2022.05.10</td>
-          </tr>
-          <tr>
-            <td>1</td>
-            <td class="subject">제목이 들어갑니다.</td>
-            <td>관리자</td>
-            <td>2022.05.10</td>
-          </tr>
-          <tr>
-            <td>1</td>
-            <td class="subject">제목이 들어갑니다.</td>
-            <td>관리자</td>
-            <td>2022.05.10</td>
-          </tr>
-          <tr>
-            <td>1</td>
-            <td class="subject">제목이 들어갑니다.</td>
-            <td>관리자</td>
-            <td>2022.05.10</td>
-          </tr>
-          <tr>
-            <td>1</td>
-            <td class="subject">제목이 들어갑니다.</td>
-            <td>관리자</td>
-            <td>2022.05.10</td>
-          </tr>
-          <tr>
-            <td>1</td>
-            <td class="subject">제목이 들어갑니다.</td>
-            <td>관리자</td>
-            <td>2022.05.10</td>
+            <td>2019.04.22</td>
           </tr>
 
+          <% list.forEach(function(item,idx){ %>
+            <tr>
+              <td> <%= item.no %> </td>
+              <td class="subject"><a href="/detail/<%= item.no %>"><%= item.title %></a> </td>
+              <td> <%= item.writer %> </td>
+              <td> <%= item.date %> </td>
+            </tr>
+            <% }) %>
+
         </tbody>
+
       </table>
+
+      <div class="writeBtn">
+        <button><a href="/write">글쓰기</a></button>
+      </div>
+
+
       <%- include("./include/pagination")%>
       <%- include("./include/search")%>
     </div>

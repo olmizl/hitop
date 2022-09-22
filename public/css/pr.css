@@ -1,0 +1,135 @@
+#certification01 .certificationTab {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+#certification01 .certificationTab li {
+  padding: 20px 70px;
+  background-color: #f0f0f0;
+  color: #888;
+  border: 1px solid #ccc;
+  font-size: 20px;
+}
+#certification01 .certificationTab li.certificationOn {
+  background-color: #bf0c14;
+  color: #fff;
+}
+#certification01 .certificationList {
+  display: flex;
+}
+#certification01 .certificationList li {
+  margin-right: 1%;
+  border: 1px solid #ccc;
+  background-color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#certification01 .certificationList li img {
+  width: 85%;
+  margin: 5% 0;
+}
+#certification01 .certificationList li p {
+  color: #999;
+  margin-bottom: 9px;
+  font-size: 14px;
+}
+#certification01 .certificationList li span {
+  margin: 14px 20px;
+  text-align: center;
+  line-height: 1.6;
+}
+
+#projects .projectsTop {
+  margin-bottom: 2%;
+}
+#projects .projectsTop ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#projects .projectsTop ul li:nth-child(1) span {
+  color: #bf0c14;
+}
+#projects .projectsTop ul li:nth-child(2) select {
+  width: 150px;
+  height: 51px;
+  outline: none;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+#projects .projectsTop ul li:nth-child(2) button {
+  padding: 15px 40px;
+  background-color: #555;
+  color: #fff;
+  font-weight: 700;
+  outline: none;
+  border: none;
+  margin-left: 9px;
+}
+#projects .projectsBottom table {
+  width: 100%;
+}
+#projects .projectsBottom table th {
+  background-color: #f0f0f0;
+  height: 60px;
+  border: 1px solid #ccc;
+  border-top: 1px solid red;
+  vertical-align: middle;
+  text-align: center;
+  font-weight: 500;
+}
+#projects .projectsBottom table tr {
+  height: 60px;
+}
+#projects .projectsBottom table tr td {
+  vertical-align: middle;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+#projects .projectsBottom table tr td:nth-child(1) {
+  width: 17%;
+}
+#projects .projectsBottom table tr td:nth-child(3) {
+  width: 45%;
+}
+
+#gallery01 #inner04 {
+  background: none;
+}
+#gallery01 #inner04 .select {
+  margin: 2% 0;
+}
+#gallery01 #inner04 .select .container {
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+}
+
+#catalog .catalogBox {
+  width: 450px;
+  height: 500px;
+  background: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ccc;
+}
+#catalog .catalogBox img {
+  border: 1px solid #ccc;
+  width: 400px;
+}
+#catalog .catalogBox p {
+  margin: 5% 0;
+  font-size: 21px;
+}
+#catalog .catalogBox button {
+  background-color: red;
+  color: #fff;
+  outline: none;
+  border: none;
+  padding: 10px 30px;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+}
