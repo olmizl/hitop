@@ -2,9 +2,9 @@
 hitop1 page(http://www.hitop1.co.kr/html/index/)의 클론코딩 페이지입니다
 
 ## 주요기능
-[1] ejs를 활용하여 코딩 최소화
-[2] kakao map API를 이요한 지도 기능 구현
-[3] node js , mongodb 데이터 통신을 통한 데이터 바인딩 기능 구현
+[1] ejs를 활용하여 코딩 최소화</br>
+[2] kakao map API를 이요한 지도 기능 구현</br>
+[3] node js , mongodb 데이터 통신을 통한 데이터 바인딩 기능 구현</br>
 [4] node js를 통한 렌더링 기능 구현
 
 ### 사용한 SKILLS 
@@ -17,7 +17,7 @@ HTML , CSS , JQUERY , NODE-JS , MONGODB
 100% (개인프로젝트)
 
 ### 학습 내용
-HTML과 CSS의 특성을 확실히 이해하기 위해 다양한 기능을 구현할 수 있는 HITOP 홈페이지를 선정하여 전체를 클론코딩 해봄으로
+HTML과 CSS의 특성을 확실히 이해하기 위해 다양한 기능을 구현할 수 있는 HITOP 홈페이지를 선정하여 전체를 클론코딩 해봄으로</br>
  HTML과 CSS의 전반적인 기능, Kakao map api를 통한 지도 삽입 기능, NODE-JS를 통한 게시판 내용확인 기능을 함유하게 되었습니다.
  
  ## 메인 페이지
