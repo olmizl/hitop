@@ -14,7 +14,6 @@
   overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: $line;
-  /* autoprefixer: off */
   -webkit-box-orient: vertical;
 }
 
@@ -32,7 +31,6 @@
     transform: translateY(-50%);
   }
 }
-// if, for
 @mixin longShadow($shadowColor: rgba(0, 0, 0, 1), $limit: 20) {
   $shadow: "";
   @for $i from 1 to ($limit - 1) {

@@ -329,7 +329,6 @@
       }
       .inner {
         width: 50%;
-        //background-color: #666;
         .year {
           margin-bottom: 30px;
           font-size: $font-large;
@@ -545,9 +544,6 @@
   }
 }
 
-//주소로 장소 표시하기 (위도,경도)
-//이미지를 커스텀
-
 #notice {
   #news {
     margin-bottom: 100px;
@@ -732,7 +728,6 @@
               background-color: #fff;
               position: absolute;
               left: -5px;
-              // top: 50%;
             }
             &:nth-child(1) {
               margin-bottom: 10px;

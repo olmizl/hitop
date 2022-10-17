@@ -56,7 +56,6 @@
         position: absolute;
         width: 0;
         height: 100%;
-        // transform: scale(1.2);
         transition: all 5s ease 1s;
         overflow: hidden;
       }
@@ -252,13 +251,7 @@
   .list {
     display: flex;
     flex-wrap: wrap;
-    // justify-content: space-between;
-    // align-content: space-between;
-    // height: 720px;
     margin: -10px;
-    // outline: 1px solid #00f;
-    //border: 1px solid #f00;
-    //width: 1220px;
     li {
       position: relative;
       overflow: hidden;
@@ -266,7 +259,6 @@
       &:hover {
         img {
           transform: scale(1.2);
-          //filter: saturate(1);
         }
         //prettier-ignore
         .border {
@@ -288,7 +280,6 @@
       }
       img {
         transition: all 0.25s ease-in-out;
-        //filter: saturate(0);
         vertical-align: top;
       }
       .border {

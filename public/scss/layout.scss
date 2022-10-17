@@ -65,14 +65,12 @@ body {
         position: relative;
         &:hover {
           .depth01 {
-            // background-color: $main-color;
             &:after {
               transform: scaleX(1);
             }
           }
           .depth02 {
             transform: translate(-50%, 0);
-            // display: block;
             opacity: 1;
             transition: background-color 0.3s ease-in-out;
             pointer-events: auto;
