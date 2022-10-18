@@ -54,7 +54,7 @@
     <ul class="list">
       <li>
         <a href="">
-          <img src="./images/main/mainLink01.jpg" alt="" />
+          <img src="./images/main/mainLink01.jpg" alt="건물 이미지" />
           <div class="txtBox">
             <p>최고의 기술 , 최상의 조직</p>
             <h3>ABOUT <br />COMPANY</h3>
@@ -63,7 +63,7 @@
       </li>
       <li>
         <a href="">
-          <img src="./images/main/mainLink02.jpg" alt="" />
+          <img src="./images/main/mainLink02.jpg" alt="우주 이미지" />
           <div class="txtBox">
             <p>하이탑이 꿈꾸는 세상</p>
             <h3>
@@ -75,7 +75,7 @@
       </li>
       <li>
         <a href="">
-          <img src="./images/main/mainLink03.jpg" alt="" />
+          <img src="./images/main/mainLink03.jpg" alt="인물 손 이미지" />
           <div class="txtBox">
             <p>변화를 주도하는 하이탑인</p>
             <h3>
@@ -99,7 +99,7 @@
     <ul class="list">
       <li>
         <a href="">
-          <img src="./images/main/businessField01.jpg" alt="" />
+          <img src="./images/main/businessField01.jpg" alt="경관용 포장재 이미지" />
           <div class="txtBox">
             <h3>경관용 포장재</h3>
             <p>아트크리트, 텍스크리트, 패턴크리트, 흙콘크리트, 실코트</p>
@@ -114,7 +114,7 @@
       </li>
       <li>
         <a href="">
-          <img src="./images/main/businessField02.jpg" alt="" />
+          <img src="./images/main/businessField02.jpg" alt="기능성 포장재 이미지" />
           <div class="txtBox">
             <h3>기능성 포장재</h3>
             <p>탄성포장재, 충겨흡수바닥재, 미끄럼방지포장재, 폴리우레아방수재, 열교환도로</p>
@@ -129,7 +129,7 @@
       </li>
       <li>
         <a href="">
-          <img src="./images/main/businessField03.jpg" alt="" />
+          <img src="./images/main/businessField03.jpg" alt="조립식 바닥재 이미지" />
           <div class="txtBox">
             <h3>조립식 바닥재</h3>
             <p>PP바닥재, 잔디보호매트, 핵사페이브, 코코블럭</p>
@@ -144,7 +144,7 @@
       </li>
       <li>
         <a href="">
-          <img src="./images/main/businessField04.jpg" alt="" />
+          <img src="./images/main/businessField04.jpg" alt="스포츠필드 이미지" />
           <div class="txtBox">
             <h3>스포츠필드</h3>
             <p>아크릴바닥재, 육상트랙, 우레탄바닥재, 학교운동장</p>
@@ -171,7 +171,7 @@
     <ul class="list">
       <li>
         <a href="">
-          <img src="./images/main/news01.jpg" alt="" />
+          <img src="./images/main/news01.jpg" alt="추석 휴무 공지" />
           <div class="desc">
             <h3>추석 휴무 공지</h3>
             <p class="txt">추석 휴무 공지 풍성한 한가위처럼 마음 또한 풍성한 시기를 바라오며, 즐겁고 행복한 추석 보내시길 바랍니다. 휴무 기간동안은 문의전화를 운영하지 않습니다.</p>
@@ -182,7 +182,7 @@
 
       <li>
         <a href="">
-          <img src="./images/main/news02.jpg" alt="" />
+          <img src="./images/main/news02.jpg" alt="하계 휴가철 인사" />
           <div class="desc">
             <h3>하계 휴가철 인사</h3>
             <p class="txt">복잡한 회사일로 마음 졸이던 일상을 벗어나 행복하고 평화로운 휴가를 보내시고 어디를 가든 지난 피로를 훨훨 다 털어버리고 오시기 바랍니다</p>
@@ -193,7 +193,7 @@
 
       <li>
         <a href="">
-          <img src="./images/main/news03.jpg" alt="" />
+          <img src="./images/main/news03.jpg" alt="선거 휴무 공지" />
           <div class="desc">
             <h3>선거 휴무 공지</h3>
             <p class="txt">해당일은 (주)하이탑 휴무일 입니다. 전화상담은 정상 운영되며 나머지 업무는 3월 10일부터 정상 운영 예정입니다.</p>
@@ -223,24 +223,21 @@
 <script>
   Splitting();
 
-  const mainVisualTL = gsap.timeline(); //모션 2개 이어붙일경우 timeline이용하기***************
-  // mainVisualTL
-  //   .from("#mainVisual .slogan h2 .char", { y: 100, opacity: 0, delay: 1, duration: 1, ease: "power4.out", stagger: 0.02 })
-  //   .from("#mainVisual .slogan p .char", { y: 100, opacity: 0, duration: 1, ease: "power4.out", stagger: 0.02 }, 1); //절대시간 1초 *** 마지막 ,1 -> 앞이 안끝나도 "1초"에는 시작하겠다
+  const mainVisualTL = gsap.timeline();
 
   mainVisualTL
     .from("#mainVisual .slogan h2 .char", { y: 100, opacity: 0, delay: 1, duration: 1, ease: "power4.out", stagger: 0.02 })
-    .from("#mainVisual .slogan p .char", { y: 100, opacity: 0, duration: 1, ease: "power4.out", stagger: 0.02 }, "-=1"); //상대시간 -1초 *** 마지막 ,"-=1" -> 앞이 끝나는시간 (3초걸린다면) 에서 -1초에서 (2초에서)시작하겠다
+    .from("#mainVisual .slogan p .char", { y: 100, opacity: 0, duration: 1, ease: "power4.out", stagger: 0.02 }, "-=1"); //
 
   const pause = document.querySelector("#mainVisual .pause");
   const play = document.querySelector("#mainVisual .play");
   pause.addEventListener("click", function () {
-    mainVisualSlider.autoplay.stop(); //autoplay 멈추는 기능
+    mainVisualSlider.autoplay.stop();
     play.style.display = "block";
     pause.style.display = "none";
   });
   play.addEventListener("click", function () {
-    mainVisualSlider.autoplay.start(); //autoplay 재시작하는 기능
+    mainVisualSlider.autoplay.start();
     pause.style.display = "block";
     play.style.display = "none";
   });
@@ -251,12 +248,10 @@
     loop: true,
     simulateTouch: false,
     navigation: {
-      //이전 , 이후 이동 클릭 버튼
       nextEl: "#mainVisual .next",
       prevEl: "#mainVisual .prev",
     },
     pagination: {
-      //페이지 지정 이동 클릭버튼
       el: "#mainVisual .pagination .bullets",
       type: "bullets",
       clickable: true,
