@@ -11,7 +11,7 @@ https://miji-hitop.herokuapp.com/
 [4] node js를 통한 렌더링 기능 구현
 
 ### 사용한 SKILLS 
-HTML , CSS , JQUERY , NODE-JS , MONGODB
+HTML , SASS , JQUERY , NODE-JS , MONGODB , ejs / include
 
 ### 제작기간
 7일 소요
